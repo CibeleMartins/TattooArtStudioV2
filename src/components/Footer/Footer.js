@@ -1,9 +1,12 @@
-
+import {HStack, Box } from '@chakra-ui/react';
 
 export default function Footer () {
 
     return (
-        <HStack>
+        <HStack
+        w="100%"
+        h={300}
+        bg="black">
             {/* content 1 */}
             <Box>
 
