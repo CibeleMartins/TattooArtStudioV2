@@ -1,14 +1,16 @@
 import { Flex } from "@chakra-ui/react"
 
-export default () => {
+const Structure = () => {
 
     return (
         <Flex
         maxWidth={2000}
-        minHeight={550}
+        minHeight={620}
         h="auto"
         w="100%">
 
         </Flex>
     )
 }
+
+export default Structure;
