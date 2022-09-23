@@ -1,33 +1,38 @@
 // modules
 import * as React from 'react';
-import Box from '@mui/material/Box';
-
+import { HStack, Box, Image } from '@chakra-ui/react'  
 
 // images
+import logo from '../../assets/logo.png'
 import login from '../../assets/loginIcon.svg';
 import register from '../../assets/registerIcon.svg';
-
-// styles
-import styles from './Header.module.css';
 
 export default function Header() {
 
   return (
-    <Box
-    className={styles.header}>
+
+    <HStack
+    bg="black"
+    w='100%'
+    h="auto"
+    justifyContent="space-between">
 
         <Box>
-            <img className={styles.icons} alt='Login' src={login} />
+            <Image w={80} h={80} ml={20} src={logo}/>
         </Box>
 
-        <Box>
-            <img className={styles.icons} alt='Login' src={login} />
-        </Box>
+        <HStack
+        w={150}>
+            <Box>
+                <Image w={30} ml={20} src={register}/>
+            </Box>
+            <Box>
+                <Image w={35} ml={20} src={login}/>
+            </Box>
+        </HStack>
+    </HStack>
 
-        <Box>
-            <img className={styles.icons} alt='Register' src={register} />
-        </Box>
+ 
 
-    </Box>
-  );
+  )
 }
