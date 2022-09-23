@@ -1,6 +1,5 @@
 import {HStack, Box, Heading, Image, Text } from '@chakra-ui/react';
 
-
 // images
 import building from '../../assets/building.svg';
 import location from '../../assets/location.svg';
